@@ -1,24 +1,31 @@
 @import url("https://fonts.googleapis.com/css?family=Cormorant+Garamond|Oswald");
+* {margin:0;padding:0;box-sizing:border-box;}
 body {
-  background-color: #f6ffff; }
-
+  background-color: #f6ffff;
+  color: #787d7f;
+  font-family: 'Cormorant Garamond', 'Times New Roman', serif;
+}
 h1,
 h2 {
-  color: #787d7f;
-  font-family: Oswald, sans-serif; }
-
-p {
-  color: #787d7f;
-  font-family: 'Cormorant Garamond', 'Times New Roman', serif; }
-
+  font-family: Oswald, sans-serif; 
+}
 footer p {
   display: inline;
-  padding-left: 16px; }
+  padding-left: 16px;
+}
 
 #what,
 #view,
 #entertainment,
 #payment {
-  margin: 48px auto; }
-
+  margin: 48px auto; 
+}
+#intro {
+  background: url(https://dummyimage.com/1920x1080/d93434/b3b5cc.png);
+  background-size:cover;
+  background-repeat:no-repeat;
+  color:#fff;
+  height:100vh;
+  padding:10em 0 0 10em;
+}
 /*# sourceMappingURL=styles.css.map */
