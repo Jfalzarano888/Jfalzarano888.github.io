@@ -23,29 +23,77 @@ $space-triple: $space * 3;
 
 $grey: #787d7f;
 
+* {margin:0;padding:0;box-sizing:border-box;}
+
 body {
   background-color: #f6ffff;
+  color: $grey;
+  font-family: 'Cormorant Garamond', 'Times New Roman', serif;
+  font-size: $font-size;
+}
+
+a {
+  text-decoration: none;
 }
 
 h1,
 h2 {
   color: $grey;
   font-family: Oswald, sans-serif;
+ }
+
+h1 {
+  background: green;
 }
 
 p {
   color: $grey;
-  font-family: 'Cormorant Garamond', 'Times New Roman', serif;
-}
+  font-family: Oswald, sans-serif;
+ }
 
-footer p {
-  display: inline;
-  padding-left: $pad;
-}
 
 #what,
 #view,
 #entertainment,
 #payment {
-  margin: $space-double auto;
+  margin: 48px auto;
+}
+
+#intro {
+  background: url('https://dummyimage.com/1920x1080/d93434/b3b5cc.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  height: 100vh;
+  padding: 50em 0 0 60em;
+ }
+
+#logo {
+  float: left;
+}
+
+.mainNav {
+  float: right;
+  font-size: 1.5em;
+  margin: 2em;
+  padding: 0 5em 0 0;
+}
+
+.navSpacing {
+  padding: 0 1em;
+}
+
+footer p {
+  text-align: center;
+  width: 100%;
+ }
+
+.footerNav {
+  text-align: center;
+  width: 100%;
+}
+
+.socialMediaIcons{
+  margin: 0 auto;
+  width: 170px;
 }
