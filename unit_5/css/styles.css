@@ -18,18 +18,18 @@ h2 {
   color: #787d7f;
   font-family: Oswald, sans-serif; }
 
-h1 {
-  background: green; }
-
 p {
   color: #787d7f;
   font-family: Oswald, sans-serif; }
 
 #what,
 #view,
-#entertainment,
+#entertain,
 #payment {
-  margin: 48px auto; }
+  margin: 80px auto;
+  padding: 15em 0 0 0;
+  text-align: center;
+  height: 100vh; }
 
 #intro {
   background: url("https://dummyimage.com/1920x1080/d93434/b3b5cc.png");
@@ -37,19 +37,32 @@ p {
   background-size: cover;
   color: #fff;
   height: 100vh;
-  padding: 50em 0 0 60em; }
+  padding: 40em 0 0 80em; }
 
 #logo {
   float: left; }
 
 .mainNav {
-  float: right;
+  position: fixed;
+  right: 0;
   font-size: 1.5em;
   margin: 2em;
   padding: 0 5em 0 0; }
 
 .navSpacing {
   padding: 0 1em; }
+
+.centerImage1 {
+  margin: 0 auto;
+  width: 28%; }
+
+.centerImage2 {
+  margin: 0 auto;
+  width: 56%; }
+
+.centerImage3 {
+  margin: 0 auto;
+  width: 83%; }
 
 footer p {
   text-align: center;
