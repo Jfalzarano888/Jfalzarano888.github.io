@@ -26,6 +26,7 @@ $grey: #787d7f;
 $purple: #69357F;
 $green: #66b045;
 $black: #000;
+$white: white;
 
 * {margin:0;padding:0;box-sizing:border-box;}
 
@@ -53,47 +54,54 @@ a {
 
 #heroSubtext {
   position: absolute;
-  font-size: 1.5em;
   bottom: 30%;
   right: 0;
   color: $black;
-  width: 40%;
+  width: 30%;
 }
 
 h1 {
-  text-decoration: underline;
-  font-size: 3em;
-
-}
-
-#heroSubtext p {
-  color: $black;
-  width: 80%;
+  display: inline-block;
+  font-size: 3rem;
+  padding: .75rem;
+  color: $white;
+  background-color: $black;
+  margin: 2px auto;
 }
 
 h2 {
   color: #fff;
   font-family: Oswald, sans-serif;
-  font-size: 3em;
+  font-size: 3rem;
  }
 
 p {
   color: #fff;
   font-family: Oswald, sans-serif;
-  font-size: 1.25em;
-  margin: 1em 0 1em 0;
+  font-size: 1em;
   letter-spacing: 2px;
+  margin: 1rem 0 1rem 0;
+ }
+
+ .imgSize{
+   width: 100%;
  }
 
 #what,
 #view,
 #entertain,
 #payment {
-  padding: 10em 0 0 0;
-  text-align: center;
   height: 100vh;
+  padding: 10rem 0 0 0;
+  text-align: center;
 }
 
+#heroSubtext p {
+  background-color: $black;
+  color: $white;
+  display: inline-block;
+  padding: 1.25rem;
+}
 
 #intro {
   background: url('../imgs/Hero.jpg');
@@ -114,21 +122,20 @@ p {
   background-color: $green;
 }
 
-
 #entertain {
   background-color: $purple;
 }
 
 .mainNav {
   font-size: 1.5em;
-  margin: 2em;
-  padding: 0 5em 0 0;
+  margin: 2em auto;
+  padding: 0 2rem 0 0;
   position: fixed;
   right: 0;
 }
 
 .navSpacing {
-  margin: 0 1em;
+  margin: 0 .75rem;
 }
 
 .whatImageStyles {
@@ -136,6 +143,8 @@ p {
   border: 10px solid $purple;
   border-radius: 10px;
   display: inline-block;
+  margin: 0 auto;
+  width: 50%;
 }
 
 
@@ -150,10 +159,10 @@ p {
 }
 
 footer {
-  position: absolute;
-  width: 100%;
   background-color: $black;
   opacity: .7;
+  position: absolute;
+  width: 100%;
 }
 
 footer p {
@@ -169,4 +178,5 @@ footer p {
 .socialMediaIcons{
   margin: 1em auto;
   width: 12.5%;
+  background-color: green;
 }
