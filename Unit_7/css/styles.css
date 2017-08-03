@@ -50,8 +50,7 @@ p {
 #entertain,
 #payment {
   height: 100vh;
-  text-align: center;
-  font-size: 20px; }
+  text-align: center; }
 
 #heroSubtext p {
   background-color: #000;
@@ -110,7 +109,7 @@ p {
   margin: 0 .75rem; }
 
 .whatImageStyles {
-  max-width: 45rem;
+  max-width: 35rem;
   background-color: #69357F;
   border-radius: 10px;
   padding: 1.5rem 0;
