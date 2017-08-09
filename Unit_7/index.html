@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title> GA Business Web Project </title>
   <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
     <header>
+
+      <nav class="mainNav clearfix">
         <a href="#intro">
           <img id="logo" src='imgs/logo.svg' alt="Ziosk logo">
         </a>
-      <nav class="mainNav">
-        <a class="navSpacing" href="#what">What is Ziosk?</a>
-        <a class="navSpacing" href="#view">View</a>
-        <a class="navSpacing" href="#entertain">Entertain</a>
-        <a class="navSpacing" href="#payment">Payment</a>
+        <a  id="hamburgerMenu" href="#">&#9776;</a>
+        <a  href="#what">What is Ziosk?</a>
+        <a  href="#view">View</a>
+        <a  href="#entertain">Entertain</a>
+        <a  href="#payment">Payment</a>
       </nav>
 	  </header>
     <section id="intro">
       <div id="heroSubtext">
         <h1>
-          <div>Enhance Your Dining</div>
-          <div>Experience</div>
+          <span>Enhance Your Dining</span>
+          <span>Experience</span>
         </h1>
         <p> Use Ziosk to change how you eat!</p>
       </div>
@@ -35,7 +39,7 @@
     <section id="view">
       <h2>View</h2>
       <p>Use Ziosk to view menu items such as appetizers, desserts, and even wine! If you see something you like, feel free to order it directly from Ziosk!</p>
-      <div class="centerImage3">
+      <div class="centerImage3 clearfix">
         <img src="imgs/start3.png" alt="Food_screen">
         <img src="imgs/dessert.JPG" alt="Dessert_screen">
         <img src="imgs/wine.JPG" alt="Wine_screen">
@@ -52,7 +56,7 @@
     <section id="payment">
       <h2>Payment</h2>
       <p>In a rush and can't find your server? With Ziosk you can pay directly at the table! Just slide your credit card, choose your tip, and print the reciept!</p>
-      <div class="centerImage1">
+      <div class="centerImage1 clearfix">
         <img src="imgs/pay.JPG" alt="Ziosk_payment">
       </div>
     </section>

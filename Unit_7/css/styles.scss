@@ -27,7 +27,8 @@ $green: #66b045;
 $black: #000;
 $white: white;
 
-$box-shadow: 0 10px 40px $purple;
+$box-shadow: 0 10px 45px $purple;
+$box-shadow2: 0 10px 45px $green;
 
 * {margin:0;padding:0;box-sizing:border-box;}
 
@@ -36,15 +37,9 @@ body {
   color: $grey;
   font-family: 'Cormorant Garamond', 'Times New Roman', serif;
   font-size: $font-size;
-  line-height: $line-height;
+  width: 100%;
 }
 
-header {
-  background-color: rgba(0, 0, 0, .7);
-  position: fixed;
-  width: 100%;
-  height: 80px;
-}
 
 a {
   color: #fff;
@@ -54,17 +49,27 @@ a {
 
 #heroSubtext {
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 75%;
   color: $black;
   width: 30%;
   transform: translate(-50%, -50%);
 }
 
+#hamburgerMenu {
+  display: none;
+}
+
 h1 {
-  font-size: 3rem;
   color: $white;
+  font-size: 2.5rem;
+}
+
+span {
   background-color: $black;
+  display: inline-block;
+  margin: .5rem 0 0;
+  padding: .5rem;
 }
 
 
@@ -84,7 +89,6 @@ p {
 #view,
 #entertain,
 #payment {
-  height: 100vh;
   text-align: center;
 }
 
@@ -104,7 +108,8 @@ p {
 
 #logo {
   position: fixed;
-  float: left;
+  top: 0;
+  left: 0;
   width: 4.5rem;
   margin: .25rem 0 0 1rem;
 }
@@ -112,22 +117,22 @@ p {
 #what {
   background-color: rgba(102, 176, 69, .8);
   color: #fff;
-  padding: 8rem 0 0;
+  padding: 6rem;
 }
 
 #view {
   color: $black;
-  padding: 10rem 0 0 ;
+  padding: 12rem 0;
 }
 
 #entertain {
   color: #fff;
-  padding: 10rem 0 0 ;
+  padding: 8rem;
 }
 
 #payment {
   color: $black;
-  padding: 8rem 0 0 ;
+  padding: 8rem;
 }
 
 #entertain {
@@ -135,33 +140,35 @@ p {
 }
 
 .clearfix:after {
-  visibility: hidden;
+  clear: both;
+  content: " ";
   display: block;
   font-size: 0;
-  content: " ";
-  clear: both;
   height: 0;
+  visibility: hidden;
 }
 
 .mainNav {
+  background-color: rgba(0, 0, 0, .7);
+  display: block;
   font-size: 1.5em;
-  margin: 1em auto;
-  padding: 0 2rem 0 0;
+  padding: 1.5rem 0;
   position: fixed;
-  right: 0;
+  text-align: center;
+  width: 100%;
 }
 
-.navSpacing {
+.mainNav a {
   margin: 0 .75rem;
 }
 
 .whatImageStyles {
-  max-width: 35rem;
   background-color: $purple;
   border-radius: 10px;
-  padding: 1.5rem 0;
-  margin: 0 auto;
   box-shadow: $box-shadow;
+  margin: 0 auto;
+  max-width: 35rem;
+  padding: 1.5rem 0;
 }
 
 .whatImageStyles img {
@@ -169,9 +176,12 @@ p {
 }
 
 .centerImage2 {
+  background-color: rgba(102, 176, 69, .75);
+  border-radius: 4px;
+  box-shadow: $box-shadow2;
   margin: 0 auto;
-  max-width: 110rem;
-  padding: 0 2rem;
+  max-width: 80rem;
+
 }
 
 .centerImage2 img {
@@ -182,15 +192,22 @@ p {
 
 .centerImage1 {
   margin: 0 auto;
-  max-width: 80rem;
-  padding: 0 2rem;
+  max-width: 90rem;
+
 }
 
 .centerImage1 img {
+  box-shadow: $box-shadow;
   width: 60%;
 }
 
+.centerImage3 {
+  margin: 0 auto;
+  max-width: 120rem;
+}
+
 .centerImage3 img {
+  box-shadow: $box-shadow;
   float: left;
   padding: .25rem;
   width: 33.3333%;
@@ -216,4 +233,75 @@ footer p {
 .socialMediaIcons{
   margin: 1em auto;
   width: 11rem;
+}
+
+@media screen and (max-width: 768px) {
+
+  #logo {
+    display: none;
+  }
+
+  #hamburgerMenu {
+    display: block;
+  }
+
+  .mainNav a {
+    display: none;
+    width: auto;
+  }
+
+  .mainNav:hover a {
+    display: block;
+  }
+
+
+  #heroSubtext {
+    position: absolute;
+    top: 90%;
+    left: 60%;
+    color: $black;
+    width: 100%;
+    transform: translate(-50%, -50%);
+  }
+
+  .centerImage3 img {
+    float: none;
+    width: 80%;
+  }
+
+  .centerImage2 img {
+    float: none;
+    width: 80%;
+  }
+
+  .centerImage1 img {
+    width: 100%;
+  }
+
+}
+
+@media screen and (max-width: 375px) {
+  #what {
+    padding: none;
+  }
+
+  .whatImageStyles {
+    background-color: $purple;
+    border-radius: 2px;
+    box-shadow: $box-shadow;
+    margin: none;
+    width: auto;
+    padding: none;
+  }
+
+  .whatImageStyles img {
+    width: 100%;
+  }
+
+ #view,
+ #payment,
+ #entertain,
+ #view {
+   padding: 1rem;
+ }
 }
