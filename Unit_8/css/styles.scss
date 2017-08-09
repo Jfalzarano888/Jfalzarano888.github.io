@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond|Oswald');
+
+// main font and line height sizes
+
+$font-size: 16px;
+$line-height: 24px;
+
+//using this for padding left and right only
+
+$pad: 16px;
+$pad-half: $pad / 2;
+$pad-and-half: $pad * 1.5;
+$pad-double: $pad * 2;
+$pad-triple: $pad * 3;
+
+//using this for spacing vertically. Use this variable for margins only!
+
+$space: 24px;
+$space-half: $space / 2;
+$space-and-half: $space * 1.5;
+$space-double: $space * 2;
+$space-triple: $space * 3;
+
+$grey: #787d7f;
+$purple: #69357F;
+$green: #66b045;
+$black: #000;
+$white: white;
+
+$box-shadow: 0 10px 45px $purple;
+$box-shadow2: 0 10px 45px $green;
+
+* {margin:0;padding:0;box-sizing:border-box;}
+
+body {
+  background-color: #f6ffff;
+  color: $grey;
+  font-family: 'Cormorant Garamond', 'Times New Roman', serif;
+  font-size: $font-size;
+  width: 100%;
+}
+
+
+a {
+  color: #fff;
+  font-size: 1.25em;
+  text-decoration: none;
+}
+
+#heroSubtext {
+  position: absolute;
+  top: 60%;
+  left: 75%;
+  color: $black;
+  width: 30%;
+  transform: translate(-50%, -50%);
+}
+
+#hamburgerMenu {
+  display: none;
+}
+
+h1 {
+  color: $white;
+  font-size: 2.5rem;
+}
+
+span {
+  background-color: $black;
+  display: inline-block;
+  margin: .5rem 0 0;
+  padding: .5rem;
+}
+
+
+h2 {
+  font-family: Oswald, sans-serif;
+  font-size: 3rem;
+ }
+
+p {
+  font-family: Oswald, sans-serif;
+  font-size: 1em;
+  letter-spacing: 2px;
+  margin: 1rem 0;
+ }
+
+#what,
+#view,
+#entertain,
+#payment {
+  text-align: center;
+}
+
+#heroSubtext p {
+  background-color: $black;
+  color: $white;
+  display: inline-block;
+  padding: 1.25rem;
+}
+
+#intro {
+  background: url('../imgs/Hero.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+ }
+
+#logo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 4.5rem;
+  margin: .25rem 0 0 1rem;
+}
+
+#what {
+  background-color: rgba(102, 176, 69, .8);
+  color: #fff;
+  padding: 6rem;
+}
+
+#view {
+  color: $black;
+  padding: 12rem 0;
+}
+
+#entertain {
+  color: #fff;
+  padding: 8rem;
+}
+
+#payment {
+  color: $black;
+  padding: 8rem;
+}
+
+#entertain {
+  background-color: $purple;
+}
+
+.clearfix:after {
+  clear: both;
+  content: " ";
+  display: block;
+  font-size: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+.mainNav {
+  background-color: rgba(0, 0, 0, .7);
+  display: block;
+  font-size: 1.5em;
+  padding: 1.5rem 0;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+}
+
+.mainNav a {
+  margin: 0 .75rem;
+}
+
+.whatImageStyles {
+  background-color: $purple;
+  border-radius: 10px;
+  box-shadow: $box-shadow;
+  margin: 0 auto;
+  max-width: 35rem;
+  padding: 1.5rem 0;
+}
+
+.whatImageStyles img {
+  width: 90%;
+}
+
+.centerImage2 {
+  background-color: rgba(102, 176, 69, .75);
+  border-radius: 4px;
+  box-shadow: $box-shadow2;
+  margin: 0 auto;
+  max-width: 80rem;
+
+}
+
+.centerImage2 img {
+  float: left;
+  padding: .25rem;
+  width: 50%;
+}
+
+.centerImage1 {
+  margin: 0 auto;
+  max-width: 90rem;
+
+}
+
+.centerImage1 img {
+  box-shadow: $box-shadow;
+  width: 60%;
+}
+
+.centerImage3 {
+  margin: 0 auto;
+  max-width: 120rem;
+}
+
+.centerImage3 img {
+  box-shadow: $box-shadow;
+  float: left;
+  padding: .25rem;
+  width: 33.3333%;
+}
+
+footer {
+  background-color: $black;
+  opacity: .7;
+  position: absolute;
+  width: 100%;
+}
+
+footer p {
+  text-align: center;
+  width: 100%;
+ }
+
+.footerNav {
+  text-align: center;
+  width: 100%;
+}
+
+.socialMediaIcons{
+  margin: 1em auto;
+  width: 11rem;
+}
+
+@media screen and (max-width: 768px) {
+
+  #logo {
+    display: none;
+  }
+
+  #hamburgerMenu {
+    display: block;
+  }
+
+  .mainNav a {
+    display: none;
+    width: auto;
+  }
+
+  .mainNav:hover a {
+    display: block;
+  }
+
+
+  #heroSubtext {
+    position: absolute;
+    top: 90%;
+    left: 60%;
+    color: $black;
+    width: 100%;
+    transform: translate(-50%, -50%);
+  }
+
+  .centerImage3 img {
+    float: none;
+    width: 80%;
+  }
+
+  .centerImage2 img {
+    float: none;
+    width: 80%;
+  }
+
+  .centerImage1 img {
+    width: 100%;
+  }
+
+}
+
+@media screen and (max-width: 375px) {
+  #what {
+    padding: none;
+  }
+
+  .whatImageStyles {
+    background-color: $purple;
+    border-radius: 2px;
+    box-shadow: $box-shadow;
+    margin: none;
+    width: auto;
+    padding: none;
+  }
+
+  .whatImageStyles img {
+    width: 100%;
+  }
+
+ #view,
+ #payment,
+ #entertain,
+ #view {
+   padding: 1rem;
+ }
+}
