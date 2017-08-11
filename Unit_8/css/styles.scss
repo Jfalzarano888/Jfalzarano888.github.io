@@ -28,7 +28,6 @@ $black: #000;
 $white: white;
 
 $box-shadow: 0 10px 45px $purple;
-$box-shadow2: 0 10px 45px $green;
 
 * {margin:0;padding:0;box-sizing:border-box;}
 
@@ -42,18 +41,18 @@ body {
 
 
 a {
-  color: #fff;
+  color: $white;
   font-size: 1.25em;
   text-decoration: none;
 }
 
 #heroSubtext {
+  color: $black;
+  left: 75%;
   position: absolute;
   top: 60%;
-  left: 75%;
-  color: $black;
-  width: 30%;
   transform: translate(-50%, -50%);
+  width: 30%;
 }
 
 #hamburgerMenu {
@@ -107,16 +106,16 @@ p {
  }
 
 #logo {
+  left: 0;
+  margin: .25rem 0 0 1rem;
   position: fixed;
   top: 0;
-  left: 0;
   width: 4.5rem;
-  margin: .25rem 0 0 1rem;
 }
 
 #what {
   background-color: rgba(102, 176, 69, .8);
-  color: #fff;
+  color: $white;
   padding: 6rem;
 }
 
@@ -125,8 +124,12 @@ p {
   padding: 12rem 0;
 }
 
+#view p {
+  padding: 0 8rem;
+}
+
 #entertain {
-  color: #fff;
+  color: $white;
   padding: 8rem;
 }
 
@@ -176,17 +179,14 @@ p {
 }
 
 .centerImage2 {
-  background-color: rgba(102, 176, 69, .75);
   border-radius: 4px;
-  box-shadow: $box-shadow2;
   margin: 0 auto;
   max-width: 80rem;
-
 }
 
 .centerImage2 img {
   float: left;
-  padding: .25rem;
+  padding: .15rem;
   width: 50%;
 }
 
@@ -235,7 +235,8 @@ footer p {
   width: 11rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
+
 
   #logo {
     display: none;
@@ -254,14 +255,13 @@ footer p {
     display: block;
   }
 
-
   #heroSubtext {
+    color: $black;
+    left: 60%;
     position: absolute;
     top: 90%;
-    left: 60%;
-    color: $black;
-    width: 100%;
     transform: translate(-50%, -50%);
+    width: 100%;
   }
 
   .centerImage3 img {
@@ -271,7 +271,7 @@ footer p {
 
   .centerImage2 img {
     float: none;
-    width: 80%;
+    width: 100%;
   }
 
   .centerImage1 img {
@@ -280,9 +280,14 @@ footer p {
 
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 600px) {
+
+  h1 {
+    font-size: 1.75rem;
+  }
+
   #what {
-    padding: none;
+    padding: .75rem;
   }
 
   .whatImageStyles {
@@ -290,7 +295,6 @@ footer p {
     border-radius: 2px;
     box-shadow: $box-shadow;
     margin: none;
-    width: auto;
     padding: none;
   }
 
@@ -298,10 +302,28 @@ footer p {
     width: 100%;
   }
 
- #view,
- #payment,
- #entertain,
- #view {
-   padding: 1rem;
+  #view,
+  #payment,
+  #entertain,
+  #view {
+    padding: 1rem;
  }
+
+ #view p {
+   padding: 0;
+ }
+
+ #heroSubtext p {
+   padding: .5rem;
+ }
+
+ .whatImageStyles {
+   background-color: $purple;
+   border-radius: 10px;
+   box-shadow: $box-shadow;
+   margin: 1rem auto;
+   max-width: 35rem;
+   padding: .5rem 0;
+ }
+
 }

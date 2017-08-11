@@ -12,17 +12,17 @@ body {
   width: 100%; }
 
 a {
-  color: #fff;
+  color: white;
   font-size: 1.25em;
   text-decoration: none; }
 
 #heroSubtext {
+  color: #000;
+  left: 75%;
   position: absolute;
   top: 60%;
-  left: 75%;
-  color: #000;
-  width: 30%;
-  transform: translate(-50%, -50%); }
+  transform: translate(-50%, -50%);
+  width: 30%; }
 
 #hamburgerMenu {
   display: none; }
@@ -66,23 +66,26 @@ p {
   height: 100vh; }
 
 #logo {
+  left: 0;
+  margin: .25rem 0 0 1rem;
   position: fixed;
   top: 0;
-  left: 0;
-  width: 4.5rem;
-  margin: .25rem 0 0 1rem; }
+  width: 4.5rem; }
 
 #what {
   background-color: rgba(102, 176, 69, 0.8);
-  color: #fff;
+  color: white;
   padding: 6rem; }
 
 #view {
   color: #000;
   padding: 12rem 0; }
 
+#view p {
+  padding: 0 8rem; }
+
 #entertain {
-  color: #fff;
+  color: white;
   padding: 8rem; }
 
 #payment {
@@ -124,15 +127,13 @@ p {
   width: 90%; }
 
 .centerImage2 {
-  background-color: rgba(102, 176, 69, 0.75);
   border-radius: 4px;
-  box-shadow: 0 10px 45px #66b045;
   margin: 0 auto;
   max-width: 80rem; }
 
 .centerImage2 img {
   float: left;
-  padding: .25rem;
+  padding: .15rem;
   width: 50%; }
 
 .centerImage1 {
@@ -171,7 +172,7 @@ footer p {
   margin: 1em auto;
   width: 11rem; }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
   #logo {
     display: none; }
 
@@ -186,12 +187,12 @@ footer p {
     display: block; }
 
   #heroSubtext {
+    color: #000;
+    left: 60%;
     position: absolute;
     top: 90%;
-    left: 60%;
-    color: #000;
-    width: 100%;
-    transform: translate(-50%, -50%); }
+    transform: translate(-50%, -50%);
+    width: 100%; }
 
   .centerImage3 img {
     float: none;
@@ -199,20 +200,22 @@ footer p {
 
   .centerImage2 img {
     float: none;
-    width: 80%; }
+    width: 100%; }
 
   .centerImage1 img {
     width: 100%; } }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 1.75rem; }
+
   #what {
-    padding: none; }
+    padding: .75rem; }
 
   .whatImageStyles {
     background-color: #69357F;
     border-radius: 2px;
     box-shadow: 0 10px 45px #69357F;
     margin: none;
-    width: auto;
     padding: none; }
 
   .whatImageStyles img {
@@ -222,6 +225,20 @@ footer p {
   #payment,
   #entertain,
   #view {
-    padding: 1rem; } }
+    padding: 1rem; }
+
+  #view p {
+    padding: 0; }
+
+  #heroSubtext p {
+    padding: .5rem; }
+
+  .whatImageStyles {
+    background-color: #69357F;
+    border-radius: 10px;
+    box-shadow: 0 10px 45px #69357F;
+    margin: 1rem auto;
+    max-width: 35rem;
+    padding: .5rem 0; } }
 
 /*# sourceMappingURL=styles.css.map */
