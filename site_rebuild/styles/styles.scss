@@ -67,8 +67,8 @@ h2 {
 #View,
 #Entertain,
 #Payment, {
-  padding: 6rem 1rem;
   line-height: 36px;
+  padding: 6rem 1rem;
 }
 
 .TextFrame {
@@ -158,9 +158,9 @@ h1 span {
   color: $white;
   font-size: 1.25rem;
   margin: 0 auto;
+  max-width: 30rem;
   padding: $pad-half 0;
   text-align: center;
-  max-width: 30rem;
 }
 
 #View {
@@ -190,8 +190,8 @@ h1 span {
 
 .EntertainImgs img {
   float: left;
-  width: 50%;
   padding: $pad-half;
+  width: 50%;
 }
 
 #Entertain {
@@ -211,7 +211,7 @@ h1 span {
 }
 
 .PaymentImgs img {
-  padding: $pad-half;
+  padding: $pad-half $pad-half 0;
   width: 100%;
 }
 
@@ -254,12 +254,13 @@ footer img {
 
   .ViewImgs img {
     float: none;
-    padding: $pad-half;
+    padding: $pad-half $pad-half 0;
     width: 100%;
   }
 
   .EntertainImgs img {
     float: none;
+    padding: $pad-half $pad-half 0;
     width: 100%;
   }
 
@@ -277,18 +278,18 @@ footer img {
   }
 
   #mobileNav {
-    display: block;
     background-color: $transparentblack;
-    padding: $pad;
+    display: block;
     text-align: center;
     width: 100%;
   }
 
   #mobileNav a {
-    display: block;
     color: $white;
+    display: block;
     font-size: 1.5rem;
     padding: $pad-half $pad;
     text-decoration: none;
   }
+
 }
