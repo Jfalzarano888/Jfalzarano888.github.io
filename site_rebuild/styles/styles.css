@@ -188,10 +188,20 @@ footer img {
   #logo {
     display: none; }
 
-  #mainNav a {
+  header {
+    display: none; }
+
+  #mobileNav {
+    background-color: rgba(0, 0, 0, 0.7);
+    display: block;
+    text-align: center;
+    width: 100%; }
+
+  #mobileNav a {
     color: #fff;
-    font-size: 2rem;
-    padding: 0 1rem;
+    display: block;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
     text-decoration: none; }
 
   .ViewImgs img {

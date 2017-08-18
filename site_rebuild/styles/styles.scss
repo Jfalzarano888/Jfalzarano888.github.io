@@ -245,10 +245,22 @@ footer img {
     display: none;
   }
 
-  #mainNav a {
+  header {
+    display: none;
+  }
+
+  #mobileNav {
+    background-color: $transparentblack;
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+
+  #mobileNav a {
     color: $white;
-    font-size: 2rem;
-    padding: 0 $pad;
+    display: block;
+    font-size: 1.5rem;
+    padding: $pad-half $pad;
     text-decoration: none;
   }
 
