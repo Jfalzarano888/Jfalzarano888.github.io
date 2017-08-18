@@ -23,26 +23,30 @@ body {
   height: 0;
   visibility: hidden; }
 
+#mobileNav {
+  display: none; }
+
 p {
   font-family: 'Cormorant Garamond', serif;
   font-size: 1.5rem; }
 
 h2 {
   font-size: 2.25rem;
-  margin: 0 auto; }
+  margin: 1rem auto; }
 
 #LandingPage,
 #WhatIsZiosk,
 #View,
 #Entertain,
 #Payment {
-  padding: 6rem 1rem; }
+  padding: 6rem 1rem;
+  line-height: 36px; }
 
 .TextFrame {
   margin: 0 auto;
+  max-width: 50rem;
   padding: 0.5rem 0;
-  text-align: center;
-  max-width: 40rem; }
+  text-align: center; }
 
 header {
   background-color: rgba(0, 0, 0, 0.7);
@@ -116,7 +120,7 @@ h1 span {
   margin: 0 auto;
   padding: 0.5rem 0;
   text-align: center;
-  width: 30rem; }
+  max-width: 30rem; }
 
 #View {
   background-color: #f9ffff; }
@@ -125,24 +129,23 @@ h1 span {
   background-color: #f9ffff;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25), 2px 2px 4px rgba(0, 0, 0, 0.15);
   margin: 0 auto;
-  max-width: 130rem;
-  padding: 1rem; }
+  max-width: 130rem; }
 
 .ViewImgs img {
   float: left;
-  width: 33%; }
+  padding: 0.5rem;
+  width: 33.333%; }
 
 .EntertainImgs {
   background-color: #69357f;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25), 2px 2px 4px rgba(0, 0, 0, 0.15);
   margin: 0 auto;
-  max-width: 80em;
-  padding: 0.5rem 0; }
+  max-width: 80em; }
 
 .EntertainImgs img {
   float: left;
-  margin: 0 .5%;
-  width: 49%; }
+  width: 50%;
+  padding: 0.5rem; }
 
 #Entertain {
   background-color: #69357f;
@@ -155,10 +158,10 @@ h1 span {
   background-color: #f9ffff;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25), 2px 2px 4px rgba(0, 0, 0, 0.15);
   margin: 0 auto;
-  padding: 1rem;
   max-width: 50rem; }
 
 .PaymentImgs img {
+  padding: 0.5rem;
   width: 100%; }
 
 footer {
@@ -169,13 +172,55 @@ footer {
 
 footer p {
   font-size: 1rem;
-  margin: 0.625rem 0; }
+  padding: 0.5rem; }
 
 footer img {
-  margin: 0.625rem 0 0; }
+  padding: 0.5rem; }
 
 #FooterNav a {
   color: #fff;
   text-decoration: none; }
+
+@media screen and (max-width: 810px) {
+  #LandingPage {
+    display: none; }
+
+  #logo {
+    display: none; }
+
+  #mainNav a {
+    color: #fff;
+    font-size: 2rem;
+    padding: 0 1rem;
+    text-decoration: none; }
+
+  .ViewImgs img {
+    float: none;
+    padding: 0.5rem;
+    width: 100%; }
+
+  .EntertainImgs img {
+    float: none;
+    width: 100%; } }
+@media screen and (max-width: 650px) {
+  #mainNav a {
+    padding: 0 0.5rem; } }
+@media screen and (max-width: 570px) {
+  header {
+    display: none; }
+
+  #mobileNav {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 1rem;
+    text-align: center;
+    width: 100%; }
+
+  #mobileNav a {
+    display: block;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    text-decoration: none; } }
 
 /*# sourceMappingURL=styles.css.map */

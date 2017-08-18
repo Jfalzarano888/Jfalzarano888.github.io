@@ -1,76 +1,86 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-  <title> GA Business Web Project </title>
-  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="styles/styles.css">
+  <title>GA Assembly Rebuild</title>
 </head>
-
 <body>
-  <section id="one">
-      <figure>
-        <div>
-            <img src="#" alt="ziosk">
-        </div>
-      </figure>
-      <h1>Enhance Your Dining Experience</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  <header>
+    <nav id="mainNav" class="clearfix">
+      <a href="#"><img id="logo" src='imgs/logo.svg' alt="logo"></a>
+      <a href="#WhatIsZiosk">What is Ziosk?</a>
+      <a href="#View">View</a>
+      <a href="#Entertain">Entertain</a>
+      <a href="#Payment">Payment</a>
+    </nav>
+  </header>
+  <section id="LandingPage">
+    <div class="LandingText">
+      <h1>
+        <span>Enhance Your</span> <br>
+        <span>Dining Experience</span>
+      </h1>
+      <p>Use Ziosk to change how you eat!</p>
+    </div>
   </section>
-
-  <section id="two">
-      <h1>What is Ziosk?</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <figure>
-          <div>
-            <img src="#" alt="Ziosk_main_screen">
-          </div>
-      </figure>
+  <section id="WhatIsZiosk">
+    <div id="ZioskNameTag">
+      <h2>Hello: My Name is Ziosk!</h2>
+      <p>Ziosk is an interactive tool to help create a smooth and fun dining experience! Read below to examine all the wonderful tasks it can perform!</p>
+      <img src="imgs/whatIsZiosk.jpg"  alt="Ziosk_main_screen">
+    </div>
   </section>
-
-  <section id="three">
-      <h1>View </h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <figure>
-          <div>
-            <img src="#" alt="Food_screen">
-          </div>
-          <div>
-            <img src="#" alt="Drink_screen">
-          </div>
-          <div>
-            <img src="#" alt="Happy_Hour_screen">
-          </div>
-      </figure>
+  <section id="View">
+    <div class="TextFrame">
+      <h2>View</h2>
+      <p>Use Ziosk to view menu items such as appetizers, desserts, and even wine! If you see something you like, feel free to order it directly from Ziosk!</p>
+    </div>
+    <div class="ViewImgs clearfix">
+      <img src="imgs/start3.png" alt="Food_screen">
+      <img src="imgs/dessert.JPG" alt="Dessert_screen">
+      <img src="imgs/wine.JPG" alt="Wine_screen">
+    </div>
   </section>
-
-  <section id="four">
-      <h1>Entertain</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <figure>
-        <div>
-          <img src="#" alt="Ziosk_feed">
-        </div>
-        <div>
-          <img src="#" alt="Ziosk_games">
-        </div>
-      </figure>
+  <section id="Entertain">
+    <div class="TextFrame">
+      <h2>Entertain</h2>
+      <p>Use Ziosk to enjoy news updates and involve your friends in family in a variety of games! Ziosk is a great way to liven up your dinner!</p>
+    </div>
+    <div class="EntertainImgs clearfix">
+      <img src="imgs/entertain.JPG" alt="Ziosk_feed">
+      <img src="imgs/trivia.png" alt="Ziosk_games">
+    </div>
   </section>
-
-  <section id="five">
-      <h1>Payment</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <figure>
-        <div>
-          <img src="#" alt="Ziosk_payment">
-        </div>
-      </figure>
+  <section id="Payment">
+    <div class="TextFrame">
+      <h2>Payment</h2>
+      <p>In a rush and can't find your server? With Ziosk you can pay directly at the table! Just slide your credit card, choose your tip, and print the receipt!</p>
+    </div>
+    <div class="PaymentImgs">
+      <img src="imgs/pay.JPG" alt="Ziosk_payment">
+    </div>
   </section>
+  <footer>
+    <nav id="mobileNav" class="clearfix">
+      <a href="#WhatIsZiosk">What is Ziosk?</a>
+      <a href="#View">View</a>
+      <a href="#Entertain">Entertain</a>
+      <a href="#Payment">Payment</a>
+    </nav>
+    <p>Copyright 2017 Ziosk Inc. All rights reserved.</p>
+    <nav id="FooterNav">
+      <a href="#">Privacy Policy |</a>
+      <a href="#">Terms of Use |</a>
+      <a href="#">Legal |</a>
+      <a href="#">Site Map</a>
+    </nav>
+      <img src="http://res.dallasnews.com/interactives/icons/better-twitter.png" alt="Twitter" class="sharebutton">
+      <img src="http://res.dallasnews.com/interactives/icons/better-facebook.png" alt="Facebook" class="sharebutton">
+      <img src="http://res.dallasnews.com/interactives/icons/better-googleplus.png" alt="Google Plus" class="sharebutton">
+  </footer>
 
 </body>
 </html>

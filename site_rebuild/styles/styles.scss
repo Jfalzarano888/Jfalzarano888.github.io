@@ -48,6 +48,10 @@ body {
   visibility: hidden;
 }
 
+#mobileNav {
+  display: none;
+}
+
 p {
   font-family: 'Cormorant Garamond', serif;
   font-size: 1.5rem;
@@ -55,7 +59,7 @@ p {
 
 h2 {
   font-size: 2.25rem;
-  margin: 0 auto;
+  margin: 1rem auto;
 }
 
 #LandingPage,
@@ -64,13 +68,14 @@ h2 {
 #Entertain,
 #Payment, {
   padding: 6rem 1rem;
+  line-height: 36px;
 }
 
 .TextFrame {
   margin: 0 auto;
+  max-width: 50rem;
   padding: $pad-half 0;
   text-align: center;
-  max-width: 40rem;
 }
 
 header {
@@ -155,7 +160,7 @@ h1 span {
   margin: 0 auto;
   padding: $pad-half 0;
   text-align: center;
-  width: 30rem;
+  max-width: 30rem;
 }
 
 #View {
@@ -167,12 +172,12 @@ h1 span {
   box-shadow: $box-shadow;
   margin: 0 auto;
   max-width: 130rem;
-  padding: 1rem;
 }
 
 .ViewImgs img {
   float: left;
-  width: 33%;
+  padding: $pad-half;
+  width: 33.333%;
 }
 
 .EntertainImgs {
@@ -180,13 +185,13 @@ h1 span {
   box-shadow: $box-shadow;
   margin: 0 auto;
   max-width: 80em;
-  padding: $pad-half 0;
+
 }
 
 .EntertainImgs img {
   float: left;
-  margin: 0 .5%;
-  width: 49%;
+  width: 50%;
+  padding: $pad-half;
 }
 
 #Entertain {
@@ -202,11 +207,11 @@ h1 span {
   background-color: $offwhite;
   box-shadow: $box-shadow;
   margin: 0 auto;
-  padding: 1rem;
   max-width: 50rem;
 }
 
 .PaymentImgs img {
+  padding: $pad-half;
   width: 100%;
 }
 
@@ -219,14 +224,71 @@ footer {
 
 footer p {
   font-size: 1rem;
-  margin: $space-half 0;
+  padding: $pad-half;
 }
 
 footer img {
-  margin: $space-half 0 0;
+  padding: $pad-half;
 }
 
 #FooterNav a {
   color: $white;
   text-decoration: none;
+}
+
+@media screen and (max-width: 810px) {
+  #LandingPage {
+    display: none;
+  }
+
+  #logo {
+    display: none;
+  }
+
+  #mainNav a {
+    color: $white;
+    font-size: 2rem;
+    padding: 0 $pad;
+    text-decoration: none;
+  }
+
+  .ViewImgs img {
+    float: none;
+    padding: $pad-half;
+    width: 100%;
+  }
+
+  .EntertainImgs img {
+    float: none;
+    width: 100%;
+  }
+
+}
+
+@media screen and (max-width: 650px) {
+  #mainNav a {
+    padding: 0 $pad-half;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  header {
+    display: none;
+  }
+
+  #mobileNav {
+    display: block;
+    background-color: $transparentblack;
+    padding: $pad;
+    text-align: center;
+    width: 100%;
+  }
+
+  #mobileNav a {
+    display: block;
+    color: $white;
+    font-size: 1.5rem;
+    padding: $pad-half $pad;
+    text-decoration: none;
+  }
 }

@@ -1,0 +1,294 @@
+* {box-sizing: border-box; margin: 0;  padding: 0;}
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond|Oswald');
+
+$font-size: 16px;
+$line-height: 24px;
+
+//using this for padding left and right only
+
+$pad: 1rem;
+$pad-half: $pad / 2;
+$pad-and-half: $pad * 1.5;
+$pad-double: $pad * 2;
+$pad-triple: $pad * 3;
+$pad-quadruple: $pad * 4;
+
+//using this for spacing vertically. Use this variable for margins only!
+
+$space: 1.25rem;
+$space-half: $space / 2;
+$space-and-half: $space * 1.5;
+$space-double: $space * 2;
+$space-triple: $space * 3;
+
+$grey: rgba(41, 41, 41, .9);
+$purple: #69357f;
+$green: #66b045;
+$black: #000;
+$transparentblack: rgba(0, 0, 0, .7);
+$white: #fff;
+$offwhite: #f9ffff;
+$box-shadow: 0px 0px 20px rgba(0, 0, 0, .25), 2px 2px 4px rgba(0, 0, 0, .15) ;
+
+* {box-sizing: border-box; margin: 0;  padding: 0;}
+
+body {
+  color: $grey;
+  font-family: 'Oswald', 'Times New Roman', sans-serif;
+  font-size: $font-size;
+  width: 100%;
+}
+
+.clearfix:after {
+  clear: both;
+  content: " ";
+  display: block;
+  font-size: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+#mobileNav {
+  display: none;
+}
+
+p {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 2.25rem;
+  margin: 1rem auto;
+}
+
+#LandingPage,
+#WhatIsZiosk,
+#View,
+#Entertain,
+#Payment, {
+  padding: 6rem 1rem;
+  line-height: 36px;
+}
+
+.TextFrame {
+  margin: 0 auto;
+  max-width: 50rem;
+  padding: $pad-half 0;
+  text-align: center;
+}
+
+header {
+  background-color: $transparentblack;
+  padding: $pad;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  width: 100%;
+}
+
+#logo {
+  left: 0;
+  margin: .25rem 0 0 1rem;
+  position: fixed;
+  top: 0;
+  width: 4.5rem;
+}
+
+#mainNav a {
+  color: $white;
+  font-size: 2rem;
+  padding: 0 $pad-double;
+  text-decoration: none;
+}
+
+#LandingPage {
+  background: url('../imgs/Hero.JPG');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.LandingText {
+  color: $black;
+  left: 75%;
+  position: absolute;
+  top: 60%;
+  transform: translate(-50%, -50%);
+  width: 25rem;
+}
+
+#LandingPage p {
+  background-color: $black;
+  color: $white;
+  display: inline-block;
+  font-size: 1.5rem;
+  padding: .75rem;
+}
+
+h1 span {
+  background-color: $black;
+  color: $white;
+  display: inline-block;
+  font-size: 3rem;
+  margin: .25rem 0;
+  padding: .75rem;
+}
+
+#WhatIsZiosk {
+  background-color: $green;
+}
+
+#ZioskNameTag {
+  background-color: $purple;
+  border-radius: 1rem;
+  box-shadow: $box-shadow;
+  color: $white;
+  margin: 0 auto;
+  max-width: 40rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+#ZioskNameTag img {
+  width: 100%;
+}
+
+#ZioskNameTag p {
+  color: $white;
+  font-size: 1.25rem;
+  margin: 0 auto;
+  padding: $pad-half 0;
+  text-align: center;
+  max-width: 30rem;
+}
+
+#View {
+  background-color: $offwhite;
+}
+
+.ViewImgs {
+  background-color: $offwhite;
+  box-shadow: $box-shadow;
+  margin: 0 auto;
+  max-width: 130rem;
+}
+
+.ViewImgs img {
+  float: left;
+  padding: $pad-half;
+  width: 33.333%;
+}
+
+.EntertainImgs {
+  background-color: $purple;
+  box-shadow: $box-shadow;
+  margin: 0 auto;
+  max-width: 80em;
+
+}
+
+.EntertainImgs img {
+  float: left;
+  width: 50%;
+  padding: $pad-half;
+}
+
+#Entertain {
+  background-color: $purple;
+  color: $white;
+}
+
+#Payment {
+  background-color: $offwhite;
+}
+
+.PaymentImgs {
+  background-color: $offwhite;
+  box-shadow: $box-shadow;
+  margin: 0 auto;
+  max-width: 50rem;
+}
+
+.PaymentImgs img {
+  padding: $pad-half;
+  width: 100%;
+}
+
+footer {
+  background-color: $transparentblack;
+  color: $white;
+  text-align: center;
+  width: 100%;
+}
+
+footer p {
+  font-size: 1rem;
+  padding: $pad-half;
+}
+
+footer img {
+  padding: $pad-half;
+}
+
+#FooterNav a {
+  color: $white;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 810px) {
+  #LandingPage {
+    display: none;
+  }
+
+  #logo {
+    display: none;
+  }
+
+  #mainNav a {
+    color: $white;
+    font-size: 2rem;
+    padding: 0 $pad;
+    text-decoration: none;
+  }
+
+  .ViewImgs img {
+    float: none;
+    padding: $pad-half;
+    width: 100%;
+  }
+
+  .EntertainImgs img {
+    float: none;
+    width: 100%;
+  }
+
+}
+
+@media screen and (max-width: 650px) {
+  #mainNav a {
+    padding: 0 $pad-half;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  header {
+    display: none;
+  }
+
+  #mobileNav {
+    display: block;
+    background-color: $transparentblack;
+    padding: $pad;
+    text-align: center;
+    width: 100%;
+  }
+
+  #mobileNav a {
+    display: block;
+    color: $white;
+    font-size: 1.5rem;
+    padding: $pad-half $pad;
+    text-decoration: none;
+  }
+}
