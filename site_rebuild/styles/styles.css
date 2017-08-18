@@ -44,7 +44,7 @@ h2 {
 
 .TextFrame {
   margin: 0 auto;
-  max-width: 50rem;
+  max-width: 40rem;
   padding: 0.5rem 0;
   text-align: center; }
 
@@ -118,7 +118,7 @@ h1 span {
   color: #fff;
   font-size: 1.25rem;
   margin: 0 auto;
-  max-width: 30rem;
+  max-width: 40rem;
   padding: 0.5rem 0;
   text-align: center; }
 
