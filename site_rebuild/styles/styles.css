@@ -32,21 +32,22 @@ p {
 
 h2 {
   font-size: 2.25rem;
-  margin: 1rem auto; }
+  margin: 1rem auto;
+  text-align: center; }
 
 #LandingPage,
 #WhatIsZiosk,
 #View,
 #Entertain,
 #Payment {
-  line-height: 36px;
+  line-height: 1.5;
   padding: 6rem 1rem; }
 
 .TextFrame {
   margin: 0 auto;
   max-width: 40rem;
   padding: 0.5rem 0;
-  text-align: center; }
+  text-align: left; }
 
 header {
   background-color: rgba(0, 0, 0, 0.7);
@@ -65,7 +66,7 @@ header {
 
 #mainNav a {
   color: #fff;
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding: 0 2rem;
   text-decoration: none; }
 
@@ -185,25 +186,6 @@ footer img {
   #LandingPage {
     display: none; }
 
-  #logo {
-    display: none; }
-
-  header {
-    display: none; }
-
-  #mobileNav {
-    background-color: rgba(0, 0, 0, 0.7);
-    display: block;
-    text-align: center;
-    width: 100%; }
-
-  #mobileNav a {
-    color: #fff;
-    display: block;
-    font-size: 1.5rem;
-    padding: 0.5rem 1rem;
-    text-decoration: none; }
-
   .ViewImgs img {
     float: none;
     padding: 0.5rem 0.5rem 0;
@@ -213,12 +195,34 @@ footer img {
     float: none;
     padding: 0.5rem 0.5rem 0;
     width: 100%; } }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 705px) {
   #mainNav a {
-    padding: 0 0.5rem; } }
+    font-size: 1.5rem;
+    padding: 1rem; } }
 @media screen and (max-width: 570px) {
+  #logo {
+    display: block;
+    margin: 0 auto;
+    padding-top: 0.5rem;
+    position: relative;
+    width: 4.5rem; }
+
   header {
-    display: none; }
+    padding: 0;
+    position: relative;
+    width: 100%; }
+
+  #mainNav a {
+    background-color: #69357f;
+    border-color: #69357f;
+    border-style: solid;
+    border-width: 2px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25), 2px 2px 4px rgba(0, 0, 0, 0.15);
+    color: #fff;
+    display: block;
+    font-size: 1.5rem;
+    padding: 0 0 1rem;
+    text-decoration: none; }
 
   #mobileNav {
     background-color: rgba(0, 0, 0, 0.7);
@@ -227,10 +231,15 @@ footer img {
     width: 100%; }
 
   #mobileNav a {
+    background-color: rgba(41, 41, 41, 0.9);
+    border-color: rgba(41, 41, 41, 0.9);
+    border-style: solid;
+    border-width: 2px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25), 2px 2px 4px rgba(0, 0, 0, 0.15);
     color: #fff;
     display: block;
     font-size: 1.5rem;
-    padding: 0.5rem 1rem;
+    padding: 0 0 1rem;
     text-decoration: none; } }
 
 /*# sourceMappingURL=styles.css.map */

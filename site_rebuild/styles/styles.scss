@@ -60,6 +60,7 @@ p {
 h2 {
   font-size: 2.25rem;
   margin: 1rem auto;
+  text-align: center;
 }
 
 #LandingPage,
@@ -67,7 +68,7 @@ h2 {
 #View,
 #Entertain,
 #Payment, {
-  line-height: 36px;
+  line-height: 1.5;
   padding: 6rem 1rem;
 }
 
@@ -75,7 +76,7 @@ h2 {
   margin: 0 auto;
   max-width: 40rem;
   padding: $pad-half 0;
-  text-align: center;
+  text-align: left;
 }
 
 header {
@@ -97,7 +98,7 @@ header {
 
 #mainNav a {
   color: $white;
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding: 0 $pad-double;
   text-decoration: none;
 }
@@ -241,29 +242,6 @@ footer img {
     display: none;
   }
 
-  #logo {
-    display: none;
-  }
-
-  header {
-    display: none;
-  }
-
-  #mobileNav {
-    background-color: $transparentblack;
-    display: block;
-    text-align: center;
-    width: 100%;
-  }
-
-  #mobileNav a {
-    color: $white;
-    display: block;
-    font-size: 1.5rem;
-    padding: $pad-half $pad;
-    text-decoration: none;
-  }
-
   .ViewImgs img {
     float: none;
     padding: $pad-half $pad-half 0;
@@ -278,16 +256,42 @@ footer img {
 
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 705px) {
   #mainNav a {
-    padding: 0 $pad-half;
+    font-size: 1.5rem;
+    padding: 1rem;
   }
 }
 
 @media screen and (max-width: 570px) {
-  header {
-    display: none;
+
+  #logo {
+    display: block;
+    margin: 0 auto;
+    padding-top: $pad-half;
+    position: relative;
+    width: 4.5rem;
   }
+
+  header {
+    padding: 0;
+    position: relative;
+    width: 100%;
+  }
+
+  #mainNav a {
+    background-color: $purple;
+    border-color: $purple;
+    border-style: solid;
+    border-width: 2px;
+    box-shadow: $box-shadow;
+    color: $white;
+    display: block;
+    font-size: 1.5rem;
+    padding: 0 0 $pad;
+    text-decoration: none;
+  }
+
 
   #mobileNav {
     background-color: $transparentblack;
@@ -297,10 +301,15 @@ footer img {
   }
 
   #mobileNav a {
+    background-color: $grey;
+    border-color: $grey;
+    border-style: solid;
+    border-width: 2px;
+    box-shadow: $box-shadow;
     color: $white;
     display: block;
     font-size: 1.5rem;
-    padding: $pad-half $pad;
+    padding: 0 0 $pad;
     text-decoration: none;
   }
 
